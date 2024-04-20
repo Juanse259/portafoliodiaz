@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/logo.png">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Juan Díaz</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Acerca de mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#hdv" onclick="seleccionar()">Hoja de vida</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/yo2.jpg" alt="">
+            </div>
+            <h1>Juan Díaz</h1>
+            <h2>Desarollador web Fullstack junior</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/juandiaz0227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                <a href="https://github.com/Juanse259" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:juansediaz18@gmail.com" target="_blank"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+                <a id="whatsapp-link" target="_blank"><i class="fa-brands fa-whatsapp" target="_blank"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Acerca de mí</h2>
+            <p><span>Hola, soy Juan Sebastián Díaz.</span> Soy una persona proactiva, con muchas ideas y excelente compañero de trabajo, con muy buenas habilidades de redacción y comunicación. Disfruto mucho de aprender cosas nuevas, siempre buscando soluciones
+                concisas y eficientes a diferentes problemáticas, manteniendo la profesionalidad y el orden.</p>
+
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento:</strong> 18/01/2023
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong> +57 319 430 1372
+                        </li>
+                        <li>
+                            <strong>Email:</strong> juansediaz18@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong> <span>FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Lectura</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Escritura</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Deportes</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Tecnología</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-atom"></i>
+                            <span>Ciencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Descargar HDV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP & Frameworks</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>74%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AJAX & JQuery</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BOOTSTRAP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>76%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git & GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redacción</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Puntualidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HDV-->
+    <section id="hdv" class="hdv">
+        <div class="contenido-seccion">
+            <h2>Hoja de vida</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en programación de software</h4>
+                        <span class="casa">Colegio técnico Jóse Félix Restrepo</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnólogo en análisis y desarrollo de sistemas de información</h4>
+                        <span class="casa">Sena CEET</span>
+                        <span class="fecha">2019 - 2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Soporte remoto y en sitio a incidentes y requerimientos</h4>
+                        <span class="casa">Sena CEET</span>
+                        <span class="fecha">Nov 2021 - May 2022</span>
+                        <p>- Mantenimiento de equipos de computo (Correctivo y preventivo).</p>
+                        <br>
+                        <p>- Instalación de sistemas operativos y máquinas virtuales.</p>
+                        <br>
+                        <p>- Activación de servicios y licencias (Adobe, Office, Windows).</p>
+                        <br>
+                        <p>- Preparación de ambientes de formación, soporte remoto y en sitio.</p>
+                        <br>
+                        <p>- Realización de labores de registro de equipos en bases de datos.</p>
+                        <br>
+                        <p>- Gestión y actualización de las hojas de vida de los equipos registrados.</p>
+                        <br>
+                        <p>- Colaboración en la organización y mantenimiento de la documentación relacionada.</p>
+                        <br>
+                        <p>- Coordinación con diferentes departamentos para garantizar la precisión de la información registrada.</p>
+                        <br>
+                        <p>- Participación en la implementación de mejoras en el sistema de registro y gestión de equipos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador web</h4>
+                        <span class="casa">Facial Tec</span>
+                        <span class="fecha">May 2022 - Oct 2022</span>
+                        <p>- Diseño y desarrollo de un sistema integral para la gestión de tiendas, consultorios y centros de estética.</p>
+                        <br>
+                        <p>- Implementación de funcionalidades de agendamiento, estadisticas y programación para optimizar la gestión de citas y reservas.</p>
+                        <br>
+                        <p>- Colaboración en la personalización del sistema según las necesidades específicas de cada cliente.</p>
+                        <br>
+                        <p>- Capacitación y soporte técnico a usuarios para garantizar el correcto uso y funcionamiento del sistema.</p>
+                        <br>
+                        <p>- Participación en la mejora continua y actualización del sistema para adaptarse a las últimas tendencias y requerimientos del mercado.</p>
+                        <br>
+                        <p>- Optimización de consultas y procedimientos almacenados para mejorar el rendimiento y la eficiencia del sistema.</p>
+                        <br>
+                        <p>- Realización de copias de seguridad regulares y gestión de la recuperación de datos en caso de fallos o pérdidas.</p>
+                        <br>
+                        <p>- Implementación de medidas de seguridad y cumplimiento de normativas para garantizar la integridad y confidencialidad de la información almacenada.</p>
+                        <br>
+                        <p>- Colaboración estrecha con el equipo de desarrollo en la integración de nuevas funcionalidades y actualizaciones del sistema basadas en requerimientos de la base de datos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Backend</h4>
+                        <span class="casa">People Marketing SAS</span>
+                        <span class="fecha">Mar 2023 - May 2023</span>
+                        <p>- Participación en el desarrollo y mantenimiento de un sistema HRM para la gestión de trabajadores, centrado en la optimización de procesos y la mejora de la eficiencia operativa.</p>
+                        <br>
+                        <p>- Provisión de soporte técnico continuo, incluyendo la identificación y corrección de errores para garantizar la estabilidad y funcionalidad del sistema.</p>
+                        <br>
+                        <p>- Diseño e implementación de un sistema de importación de nómina para facilitar la gestión y actualización de datos salariales de los trabajadores.</p>
+                        <br>
+                        <p>- Colaboración con diferentes departamentos para entender y satisfacer las necesidades específicas de la organización en relación con la gestión de trabajadores.</p>
+                        <br>
+                        <p>- Realización de pruebas exhaustivas para asegurar la calidad y fiabilidad del sistema HRM, garantizando su correcto funcionamiento en diferentes escenarios y condiciones.</p>
+                        <br>
+                        <p>- Capacitación y asesoramiento a usuarios finales para promover el correcto uso del sistema y maximizar su valor añadido en la gestión diaria de recursos humanos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador independiente</h4>
+                        <span class="casa">Freelancer</span>
+                        <span class="fecha"></span>
+                        <p>- Desarrollo de páginas web y aplicaciones de escritorio personalizadas para la venta a negocios y emprendimientos, adaptadas a las necesidades y requerimientos específicos del cliente.</p>
+                        <br>
+                        <p>- Provisión de soporte técnico integral a equipos de cómputo, incluyendo mantenimiento preventivo y correctivo para garantizar un rendimiento óptimo y la disponibilidad continua de los sistemas.</p>
+                        <br>
+                        <p>- Colaboración estrecha con clientes para entender y traducir sus requerimientos y especificaciones en soluciones de software funcionales y eficientes.</p>
+                        <br>
+                        <p>- Diseño e implementación de soluciones a medida, asegurando la satisfacción del cliente y la entrega de productos de alta calidad en tiempo y forma.</p>
+                        <br>
+                        <p>- Realización de pruebas y depuración de software para garantizar su funcionamiento adecuado y minimizar posibles errores o fallos.</p>
+                        <br>
+                        <p>- Capacitación y asesoramiento a usuarios finales para facilitar la adopción y el uso efectivo de las soluciones desarrolladas.</p>
+                        <br>
+                        <p>- Creación y mantenimiento de un blog personal enfocado en la publicación de textos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/sena/sen.PNG" alt="">
+                    <a href="img/sena/infosena.PNG" data-lightbox="sena">
+                        <div class="overlay">
+                            <h3>Sena CEET</h3>
+                            <p>Sistema de inventario y gestión de equipos</p>
+                        </div>
+                    </a>
+                    <a href="img/sena/sen.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen1.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen2.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen3.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen4.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen5.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen6.PNG" data-lightbox="sena"></a>
+                    <a href="img/sena/sen7.PNG" data-lightbox="sena"></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/wikli/wik.PNG" alt="">
+                    <a href="img/wikli/infowikli.PNG" data-lightbox="wikli">
+                        <div class="overlay">
+                            <h3>FacialTec</h3>
+                            <p>Sistema de gestión de clientes y centros de estética </p>
+                        </div>
+                    </a>
+                    <a href="img/wikli/wik.PNG" data-lightbox="wikli"></a>
+                    <a href="img/wikli/wik1.PNG" data-lightbox="wikli"></a>
+                    <a href="img/wikli/wik2.PNG" data-lightbox="wikli"></a>
+                    <a href="img/wikli/wik3.PNG" data-lightbox="wikli"></a>
+                    <a href="img/wikli/wik4.PNG" data-lightbox="wikli"></a>
+                    <a href="img/wikli/wik5.PNG" data-lightbox="wikli"></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/poster/ind1.PNG" alt="">
+                    <a href="img/poster/ind.PNG" data-lightbox="poster">
+                        <div class="overlay">
+                            <h3>Independiente</h3>
+                            <p>Emprendimiento de servicio técnico</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/overall/peop.PNG" alt="">
+                    <a href="img/overall/infopeople.PNG" data-lightbox="people">
+                        <div class="overlay">
+                            <h3>People Marketing</h3>
+                            <p>Sistema HRM para gestión de trabajadores</p>
+                        </div>
+                    </a>
+                    <a href="img/overall/peop.PNG" data-lightbox="people"></a>
+                    <a href="img/overall/peop1.PNG" data-lightbox="people"></a>
+                    <a href="img/overall/peop2.PNG" data-lightbox="people"></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/sanf/arci.PNG" alt="">
+                    <a href="img/sanf/infoarcillas.PNG" data-lightbox="arcillas">
+                        <div class="overlay">
+                            <h3>Arcillas San Felipe</h3>
+                            <p>Página de contacto para la promoción de los productos de la empresa</p>
+                        </div>
+                    </a>
+                    <a href="img/sanf/arci.PNG" data-lightbox="arcillas"></a>
+                    <a href="img/sanf/arci1.PNG" data-lightbox="arcillas"></a>
+                    <a href="img/sanf/arci2.PNG" data-lightbox="arcillas"></a>
+                    <a href="img/sanf/arci3.PNG" data-lightbox="arcillas"></a>
+                    <a href="img/sanf/arci4.PNG" data-lightbox="arcillas"></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/spiral/spe.PNG" alt="">
+                    <a href="img/spiral/infospiral.PNG" data-lightbox="spiral">
+                        <div class="overlay">
+                            <h3>Spiral Eyes</h3>
+                            <p>Blog personal para la publicación de escritos</p>
+                        </div>
+                    </a>
+                    <a href="img/spiral/MainSpiral.png" data-lightbox="spiral"></a>
+                    <a href="img/spiral/spe.PNG" data-lightbox="spiral"></a>
+                    <a href="img/spiral/spe1.PNG" data-lightbox="spiral"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/juandiaz0227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="https://github.com/Juanse259" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:juansediaz18@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a id="whatsapp-linkf" target="_blank"><i class="fa-brands fa-whatsapp" target="_blank"></i></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
